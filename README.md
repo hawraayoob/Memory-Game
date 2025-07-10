@@ -5,6 +5,31 @@
 ## By Hawra Ayoob
 
 ### **Description**
+#### Memory Card Game Pseudocode
+Game Setup
+#### START:
+•	CREATE 16 cards (8 pairs) and shuffle them
+•	DISPLAY cards face-down in grid
+•	START timer
+Gameplay
+•	When a player clicks a card: FLIP card face-up
+   
+    IF this is the first card: REMEMBER this card
+    IF this is the second card:
+    IF both cards match: KEEP both cards face-up
+        ELSE:
+            WAIT for 1 second, then flip both cards face-down
+#### Win Condition
+IF all pairs are matched:
+Also, it will have score
+    STOP timer
+    SHOW "You Win!" message
+
+#### Reset Button
+When reset button clicked:
+    SHUFFLE cards again
+    FLIP all cards face-down
+    RESTART timer
 
 # Screenshots
 
