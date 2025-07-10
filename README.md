@@ -5,8 +5,8 @@
 ## By Hawra Ayoob
 
 ### **Description**
-#### Memory Card Game Pseudocode
-Game Setup
+#### Memory Card Game Pseudocode "setup"
+
 #### START:
 •	CREATE 16 cards (8 pairs) and shuffle them
 •	DISPLAY cards face-down in grid
