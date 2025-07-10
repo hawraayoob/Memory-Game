@@ -11,8 +11,10 @@
 - CREATE 2 cards (1 pairs) and shuffle them
 - DISPLAY cards face-down in grid
 - START timer
-Gameplay
-- When a player clicks a card: FLIP card face-up
+- 
+#### Gameplay:
+
+When a player clicks a card: FLIP card face-up
    
 IF this is the first card: REMEMBER this card
 
@@ -20,13 +22,13 @@ IF both cards match: KEEP both cards face-up
 
 ELSE: WAIT for 1 second, then flip both cards face-down
 
-#### Win Condition
+#### Win Condition:
 IF all pairs are matched:
 Also, it will have score
     STOP timer
     SHOW "You Win!" message
 
-#### Reset Button
+#### Reset Button:
 When reset button clicked:
     SHUFFLE cards again
     FLIP all cards face-down
