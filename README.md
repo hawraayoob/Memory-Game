@@ -15,9 +15,10 @@ Gameplay
 - When a player clicks a card: FLIP card face-up
    
 IF this is the first card: REMEMBER this card
-    IF both cards match: KEEP both cards face-up
-        ELSE:
-            WAIT for 1 second, then flip both cards face-down
+
+IF both cards match: KEEP both cards face-up
+
+ELSE: WAIT for 1 second, then flip both cards face-down
 
 #### Win Condition
 IF all pairs are matched:
