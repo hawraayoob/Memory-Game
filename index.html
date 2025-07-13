@@ -1,25 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEMORY CARD GAME</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 
-  <title>Memory Card Game</title>
+<body>
 
-  <link rel="stylesheet" href="styles.css">
+    <div class="cardContainer">
+        <div class="memory-card" data-framework="helmet">
+            <img class="front-face"
+                src="https://static.vecteezy.com/system/resources/previews/004/221/807/non_2x/construction-helmet-accessory-isolated-icon-free-vector.jpg"
+                alt="helmet" />
+            <img class="back-face" src="https://www.svgrepo.com/show/342350/vue-js.svg" alt="vue js" />
+        </div>
+        <div class="memory-card" data-framework="helmet">
+            <img class="front-face"
+                src="https://static.vecteezy.com/system/resources/previews/004/221/807/non_2x/construction-helmet-accessory-isolated-icon-free-vector.jpg"
+                alt="helmet" />
+            <img class="back-face" src="https://www.svgrepo.com/show/342350/vue-js.svg" alt="vue js" />
+        </div>
+
+        <div class="memory-card" data-framework="measuring tool">
+            <img class="front-face" src="https://cdn-icons-png.flaticon.com/512/5813/5813984.png"
+                alt="measuring tool" />
+            <img class="back-face" src="https://seeklogo.com/images/J/javascript-logo-851B872133-seeklogo.com.png" alt="vue js" />
+        </div>
+        <div class="memory-card" data-framework="measuring tool">
+            <img class="front-face" src="https://cdn-icons-png.flaticon.com/512/5813/5813984.png"
+                alt="measuring tool" />
+            <img class="back-face" src="https://seeklogo.com/images/J/javascript-logo-851B872133-seeklogo.com.png" alt="vue js" />
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- another-page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Another Page</title>
 </head>
 <body>
-  <section class="memory-game">
-    <div class="memory-card" data-framework="plan">
-      <img class="front-face" src="https://cdn-icons-png.flaticon.com/512/6213/6213486.png" alt="plan" />
-      <img class="back-face" src="https://www.svgrepo.com/show/342350/vue-js.svg" alt="vue js" />
-    </div>
-    <div class="memory-card" data-framework="plan">
-      <img class="front-face" src="https://cdn-icons-png.flaticon.com/512/6213/6213486.png" alt="plan" />
-      <img class="back-face" src="https://www.svgrepo.com/show/342350/vue-js.svg" alt="vue js" />
-    </div>
-    
-  </section>
+    <h1>Memory Card Game</h1>
 
-  <script src="scripts.js"></script>
+    </div>
+    <p>score: <span class="score"></span></p>
+    <div class="actions">
+        <button onclick="restart()">Restart</button>
+    </div>
+
+    <a href="index.html">Home</a>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
