@@ -1,114 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Memory Game</title>
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
+
 <body>
-    <h1>Memory Card Game</h1>
-    <section class="game-board">
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/24/ff/ca/24ffca1b0591346987b6405edb3bfbe7.jpg" alt="mekasa" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
+
+    <div class="layout">
+        <h1>MEMORY GAME</h1>
+        <div class="game"></div>
+
+        
+        <div class="game-board">
+         <div class="card">
+                <img src="pic/Mekasa.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+
+            <div class="card">
+                <img src="pic/Mekasa.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>  
+            
+            <div class="card">
+                <img src="pic/Bat.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+
+            <div class="card">
+                <img src="pic/Bat.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>     
+
+            <div class="card">
+                <img src="pic/Naruto.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+
+            <div class="card">
+                <img src="pic/Naruto.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>  
+
+            <div class="card">
+                <img src="pic/ZI.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+
+            <div class="card">
+                <img src="pic/ZI.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div> 
+
+            <div class="card">
+                <img src="pic/zoro.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+
+            <div class="card">
+                <img src="pic/zoro.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div> 
+
+            <div class="card">
+                <img src="pic/oiz.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+
+            <div class="card">
+                <img src="pic/oiz.jpg" class="front-face">
+                <img src="pic/BACKFACE.jpg" class="back-face">
+            </div>
+             </div>
+
+            <button class="reset" onclick="window.location.reload();">RESET</button>
         </div>
 
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/24/ff/ca/24ffca1b0591346987b6405edb3bfbe7.jpg" alt="mekasa" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
+            <script src="script.js"></script>
 
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/ba/0c/01/ba0c018368d7851a5dd1712f92599301.jpg" alt="snacks" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/ba/0c/01/ba0c018368d7851a5dd1712f92599301.jpg" alt="snacks" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/52/29/66/5229664fc198fdede50c2e96467e4ba3.jpg" alt="naruto" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/52/29/66/5229664fc198fdede50c2e96467e4ba3.jpg" alt="naruto" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/7f/e2/d0/7fe2d0733e475a8a07c73e09bfa63f61.jpg" alt="bat" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/7f/e2/d0/7fe2d0733e475a8a07c73e09bfa63f61.jpg" alt="bat" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/08/95/1c/08951cef609b5a905e110f168cee0435.jpg" alt="oth" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/08/95/1c/08951cef609b5a905e110f168cee0435.jpg" alt="oth" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/1200x/a5/b3/b3/a5b3b3bc05e668890a52d05fb6ac0458.jpg" alt="tachi" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/1200x/a5/b3/b3/a5b3b3bc05e668890a52d05fb6ac0458.jpg" alt="tachi" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/f2/24/fa/f224fa9a1d913de38d0ab09482f879b6.jpg" alt="zoro" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/f2/24/fa/f224fa9a1d913de38d0ab09482f879b6.jpg" alt="zoro" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-
-                <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/af/29/d1/af29d1118b47cfdcb6ce71943d9afc15.jpg" alt="sam" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-        <div class="card">
-            <img class="front-face" src="https://i.pinimg.com/736x/af/29/d1/af29d1118b47cfdcb6ce71943d9afc15.jpg" alt="sam" />
-            <img class="back-face" src="https://i.pinimg.com/736x/1a/01/96/1a0196bb2eb22ba7c49025876ef945a0.jpg" alt="onepiece" />
-        </div>
-
-
-    </section>
-
-
-    <p>score: <span class="score"></span></p>
-    <div class="reset">
-        <button onclick="restart()">Restart</button>
-
-
-
-
-
-
-    </div>
-
-    <script src="index.js"></script>
 </body>
 </html>
 
