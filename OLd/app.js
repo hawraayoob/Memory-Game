@@ -9,7 +9,6 @@ const restart = document.getElementById("restart");
 const scoreE = document.createElement('div');
 
 
-//score
 scoreE.id = 'score';
 scoreE.textContent = 'Score: 0';
 document.body.prepend(scoreE);
@@ -19,7 +18,7 @@ function updateScore() {
 }
 
 
-//flip
+//flipcard
 allCards.forEach((card) => {
   card.addEventListener("click", handleCardClicked);
 
@@ -40,7 +39,7 @@ function handleCardClicked() {
   const img1 = firstCard ? firstCard.firstElementChild.src : null;
   const img2 = secondCard ? secondCard.firstElementChild.src : null;
 
-  //update score
+  //score
   if (img1 && img2 && img1 === img2) {
     console.log("Match!");
     score++;
@@ -62,13 +61,15 @@ function handleCardClicked() {
   }
 }
 
-// //gameover
+
+// win fuction
 function handleGameOver() {
   document.querySelector(".message").textContent= "YOU WIN 👑"
   setTimeout(() => {
   location.reload();
   }, 1500);
 }
+
 
 //restart
 restart.addEventListener("click", () => {

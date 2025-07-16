@@ -9,19 +9,20 @@ body{
   height: 100vh;
   display: flex;
   background: url('https://free-3dtextureshd.com/wp-content/uploads/2025/01/168.jpg.webp');
-    background-size: cover;
+  background-size: cover;
 }
 
 .game-board{
   width: 440px;
-  height: 440px;
+  height: 650px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   perspective: 1000px;
   position: relative;
   background: rgb(190, 57, 33);
+  
 }
 
 .content{
@@ -35,21 +36,14 @@ body{
 }
 
 
-.h2{
-  font-size: 3em;
-  color: rgb(60, 107, 154);
-}
-
-
-
 .card{
   width:calc(25% - 10px);
-  height: calc(33.333% - 10px);
+  height: calc(33.333% - 8px);
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
   transition: all .1s;
-  box-shadow: 1px 1px 10px rgba(0,0,0,.3);
+  box-shadow: 0px 0px 0px rgba(0,0,0,.3);
 }
 
 .card:active{
@@ -74,38 +68,16 @@ body{
   transform: rotateY(180deg);
 }
 
-
-p{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.actions{
-    display: flex;
-    justify-content: center;
-}
-
-#score{
-    font-size: 20px;
-    color:rgb(23, 22, 22);
-    align-items: center;
-    font-weight: 100;
-    font-family: sans-serif;
-}
-
 #restart{
-  padding: 15px 20px;
+  padding: 10px 16px;
     font-size: 20px;
-    font-weight: 100PX;
     font-family: sans-serif;
     border: none;
     border-radius: 10px;
-    background-color: rgb(182, 73, 73);
-    color:rgb(0, 0, 0);
+    background-color:  rgb(190, 57, 33);
+    color:rgb(9, 9, 9);
     position: relative;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-
+    box-shadow: 1px 10px 10px rgba(0,0,0,.3);
 
 }
 
