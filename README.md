@@ -8,7 +8,7 @@
 #### Memory Card Game Pseudocode "setup"
 
 #### START:
-- CREATE 2 cards (1 pairs) and shuffle them
+- CREATE 16 cards (8 pairs) and shuffle them
 - DISPLAY cards face-down in grid
 - START timer
 - 

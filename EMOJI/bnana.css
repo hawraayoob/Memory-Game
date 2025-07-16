@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/904/1022/350/hud-1-wallpaper-preview.jpg');
+
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: rgb(190, 192, 195);
+}
+
+#score {
+    color: white;
+    font-size: x-large;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 320px;
+    background-color:rgb(82, 115, 148);
+    padding: 10px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 1px 1px 0 rgb(0, 0, 0);
+}
+
+.card.flipped {
+    background-color: rgb(195, 193, 193);
+    color: rgb(255, 255, 255);
+    transition: background-color .2s linear;
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 560px;
+
+}
+
+.actions button {
+    padding: 4px 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(195, 193, 193);
+    color:rgb(0, 0, 0);
+}
+
+.score{
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
