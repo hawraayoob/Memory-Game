@@ -1,8 +1,8 @@
 const allCards = document.querySelectorAll(".card");
 
-let firstCard = null,
-  secondCard = null;
-let canClick = true;
+let cardOne = null,
+  cardTwo = null;
+let canFlip = true;
 let score = 0;
 
 const restart = document.getElementById("restart");
@@ -13,14 +13,14 @@ scoreE.id = 'score';
 scoreE.textContent = 'Score: 0';
 document.body.prepend(scoreE);
 
-function updateScore() {
+function refreshScore() {
   scoreE.textContent = `Score: ${score}`;
 }
 
 
 //flipcard
 allCards.forEach((card) => {
-  card.addEventListener("click", handleCardClicked);
+  card.addEventListener("click", flipCard);
 
 
   
@@ -28,35 +28,35 @@ allCards.forEach((card) => {
   card.style.order = randPos;
 });
 
-function handleCardClicked() {
-  if (!canClick || this.classList.contains("flip")) return;
+function flipCard() {
+  if (!canFlip || this.classList.contains("flip")) return;
 
   this.classList.add("flip");
 
-  if (!firstCard) firstCard = this;
-  else if (!secondCard) secondCard = this;
+  if (!cardOne) cardOne = this;
+  else if (!cardTwo) cardTwo = this;
 
-  const img1 = firstCard ? firstCard.firstElementChild.src : null;
-  const img2 = secondCard ? secondCard.firstElementChild.src : null;
+  const img1 = cardOne ? cardOne.firstElementChild.src : null;
+  const img2 = cardTwo ? cardTwo.firstElementChild.src : null;
 
-  //score
+  //refresh score matchcard
   if (img1 && img2 && img1 === img2) {
     console.log("Match!");
     score++;
-    updateScore();
-    firstCard = null;
-    secondCard = null;
+    refreshScore();
+    cardOne = null;
+    cardTwo = null;
     
   
     if (score === 6) handleGameOver();
   } else if (img1 && img2) {
-    canClick = false;
+    canFlip = false;
     setTimeout(() => {
-      firstCard.classList.remove("flip");
-      secondCard.classList.remove("flip");
-      firstCard = null;
-      secondCard = null;
-      canClick = true;
+      cardOne.classList.remove("flip");
+      cardTwo.classList.remove("flip");
+      cardOne = null;
+      cardTwo = null;
+      canFlip = true;
     }, 1000);
   }
 }
@@ -76,3 +76,4 @@ restart.addEventListener("click", () => {
   console.log("Restarting game...");
   location.reload();
 });
+
