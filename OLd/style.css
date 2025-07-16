@@ -8,7 +8,7 @@
 body{
   height: 100vh;
   display: flex;
-  background: url('https://free-3dtextureshd.com/wp-content/uploads/2025/01/168.jpg.webp');
+  background: url('https://free-3dtextureshd.com/wp-content/uploads/2025/01/36.jpg.webp');
   background-size: cover;
 }
 
@@ -21,7 +21,7 @@ body{
   gap: 12px;
   perspective: 1000px;
   position: relative;
-  background: rgb(190, 57, 33);
+  background: rgb(187, 179, 179);
   
 }
 
@@ -74,8 +74,8 @@ body{
     font-family: sans-serif;
     border: none;
     border-radius: 10px;
-    background-color:  rgb(190, 57, 33);
-    color:rgb(9, 9, 9);
+    background-color:  rgb(239, 239, 239);
+    color:rgb(4, 4, 4);
     position: relative;
     box-shadow: 1px 10px 10px rgba(0,0,0,.3);
 
@@ -89,3 +89,6 @@ body{
   text-align: center;
 }
 
+h1{
+  color:rgb(251, 249, 249);
+}

@@ -48,4 +48,4 @@ When reset button clicked:
 
 ### i will add sound effects for events like flip, match, and win.
 
-### i will add Hard Mode (4×6 cards) with fast and limited time.
+### i will add Hard Mode (4×6 cards) with fast and limited time.////////////////////////////
