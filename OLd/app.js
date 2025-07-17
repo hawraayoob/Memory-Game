@@ -6,28 +6,29 @@ let canFlip = true;
 let score = 0;
 
 const restart = document.getElementById("restart");
-const scoreE = document.createElement('div');
+const scoreS = document.createElement('div');
 
 
-scoreE.id = 'score';
-scoreE.textContent = 'Score: 0';
-document.body.prepend(scoreE);
+scoreS.id = 'score';
+scoreS.textContent = 'Score: 0';
+document.body.prepend(scoreS);
 
 function refreshScore() {
-  scoreE.textContent = `Score: ${score}`;
+  scoreS.textContent = `Score: ${score}`;
 }
 
 
-//flipcard
+
 allCards.forEach((card) => {
   card.addEventListener("click", flipCard);
 
 
-  
-  let randPos = Math.floor(Math.random() * 12);
-  card.style.order = randPos;
+  //rearrange cards randomly
+  let randomOrder = Math.floor(Math.random() * 16);
+  card.style.order = randomOrder;
 });
 
+//flipcard
 function flipCard() {
   if (!canFlip || this.classList.contains("flip")) return;
 
@@ -36,20 +37,20 @@ function flipCard() {
   if (!cardOne) cardOne = this;
   else if (!cardTwo) cardTwo = this;
 
-  const img1 = cardOne ? cardOne.firstElementChild.src : null;
-  const img2 = cardTwo ? cardTwo.firstElementChild.src : null;
+  const pic1 = cardOne ? cardOne.firstElementChild.src : null;
+  const pic2 = cardTwo ? cardTwo.firstElementChild.src : null;
 
-  //refresh score matchcard
-  if (img1 && img2 && img1 === img2) {
+
+  if (pic1 && pic2 && pic1 === pic2) {
     console.log("Match!");
     score++;
     refreshScore();
     cardOne = null;
     cardTwo = null;
     
-  
-    if (score === 6) handleGameOver();
-  } else if (img1 && img2) {
+
+    if (score === 8) handleGameEnd();
+  } else if (pic1 && pic2) {
     canFlip = false;
     setTimeout(() => {
       cardOne.classList.remove("flip");
@@ -63,7 +64,7 @@ function flipCard() {
 
 
 // win fuction
-function handleGameOver() {
+function handleGameEnd() {
   document.querySelector(".message").textContent= "YOU WIN 👑"
   setTimeout(() => {
   location.reload();
