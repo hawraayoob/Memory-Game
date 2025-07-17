@@ -8,10 +8,10 @@
 ### ** 📝 Description **
 #### A card matching game built with HTML, CSS, and JavaScript. The memory game challenges players to find all matching pairs of cards. It features a 4x3 grid of cards that are shuffled randomly at the start of each game.
 
-### **🧠 Game Logic | How to Play? **
+### **🧠 Game Logic | How to Play?**
 #### Start
-- CREATE 12 cards (6 pairs) and shuffle them 
-- DISPLAY cards face-down in 4×3 grid 
+- CREATE 16 cards (8 pairs) and shuffle them 
+- DISPLAY cards face-down in 4×4 grid 
 - INITIALIZE score
 
 #### Play Sequence
