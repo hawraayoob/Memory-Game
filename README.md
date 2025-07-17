@@ -1,14 +1,14 @@
 # ☠︎ MEMORY GAME ☠︎ -SEB9
 
-### ** Project Details **
+### Project Details
 - Course: GA-SEB9
 - Date: September 17, 2025
 - Done by: Hawra Ayoob
 
-### ** 📝 Description **
+### 📝 Description 
 #### A card matching game built with HTML, CSS, and JavaScript. The memory game challenges players to find all matching pairs of cards. It features a 4x3 grid of cards that are shuffled randomly at the start of each game.
 
-### **🧠 Game Logic | How to Play?**
+### 🧠 Game Logic | How to Play?
 #### Start
 - CREATE 16 cards (8 pairs) and shuffle them 
 - DISPLAY cards face-down in 4×4 grid 
@@ -29,7 +29,11 @@ When click reset button: shuffle cards randomly and flip all cards face-down aga
 # 📸 Screenshots
 
 #### Gameplay
-![image2](https://www.sourcecodester.com/sites/default/files/images/rems/mg_0.png)
+![image1](https://ibb.co/39KkDsXD)
+
+#### Win condition
+![image2](https://ibb.co/XkCwbppV)
+
 
 # ✨ Features
 - Score Tracking: Monitor your performance.
