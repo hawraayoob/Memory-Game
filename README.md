@@ -29,10 +29,10 @@ When click reset button: shuffle cards randomly and flip all cards face-down aga
 # 📸 Screenshots
 
 #### Gameplay
-![image1](https://ibb.co/39KkDsXD)
+![image1](https://i.ibb.co/v69D7B57/first.png)
 
 #### Win condition
-![image2](https://ibb.co/XkCwbppV)
+![image2](https://i.ibb.co/QjK5fnnX/second.png)
 
 
 # ✨ Features
